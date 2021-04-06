@@ -1,11 +1,78 @@
-header {
-    background-color: #80AA89;
+/* body {
+    background-image: url('./Images/home.png');
+    animation-name: move-bg;
+    animation: move-bg 40s linear infinite;
+    width: 100%;
+    position: fixed;
+}
+  
+@keyframes move-bg {
+    0% {
+      background-position: 0px;
+    }
+    100% {
+      background-position: 4000px;
+    }
+} */
+
+/* .homePage {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
 }
 
-nav {
-    background-color: #BEDBBB;
+label {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    font-size: xx-large;
 }
 
-footer {
-    background-color: #92817A;
+button {
+    background-color: #53B175;
+    border-radius: 10px 10px;
+    color: white;
+    border-color: #53B175;
+    margin: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+form {
+    background-color: pink;
+    border-radius: 10px 10px;
+    padding: 15px;
+    margin: 30px;
+} */
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    background-color: grey;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 20px 20px;
+    text-align: center;
+}
+
+.slogan {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: center;
+}
+
+input {
+    background-color: #53B175;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px 10px;
+    margin: 0 auto;
+    position: relative;
+    font-size: large;
+    border:#53B175;
+}
+
+img {
+    width: 80%;
+    height: 80%;
 }
