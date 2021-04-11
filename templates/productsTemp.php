@@ -45,9 +45,9 @@
 
   <nav>
     <ul>
+      <li id="goToLanding"><a href="index.html"> <i class="fas fa-shopping-cart"> Home </i></a></li>
       <li id="shopBtn"><a href="products.php"> <i class="fas fa-store"> Shop </i></a> </li>
       <li id="cartBtn"><a href="cart.php"> <i class="fas fa-shopping-cart"> Cart </i></a></li>
-      <li id="accountBtn"><i class="fas fa-user-circle"> Account </i></li>
     </ul>
    </nav>
 </body>

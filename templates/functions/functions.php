@@ -22,6 +22,7 @@ function theProducts() {
         </div>
 
         <div class="PriceOrderAdd">
+          
           <div class="priceBags">    
             
             <div class="price">
@@ -33,17 +34,15 @@ function theProducts() {
             </div>
           
           </div>
-        <div class="addToCartButton">
-
+          <div class="addToCartButton">
             <input name="productId" type="hidden" value=<?php echo $row['product_id']; ?>>
             <input name="productPrice" type="hidden" value=<?php echo $row['price']; ?>>
             <input class="addToCart" type="image" src=".//Images/products/addButton.png" width=80px height=80px>
             <br>
-
           </div>
+         
         </div>
       </div>
-
     <?php
   }
   echo "</div>";
@@ -81,7 +80,8 @@ function theCart() {
         </div>
 
         <div class="cartTotal">
-          Your Total: 
+          Your Total:
+        </div> 
       </div>
 
     <?php
