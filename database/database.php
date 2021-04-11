@@ -42,6 +42,28 @@ function handleReviewSubmission() {
   }
 }
 
+function fetchProduct() {
+  global $pdo;
+  // global $cart_products;
+
+  if($_SERVER["REQUEST_METHOD"] == "POST") {
+    // TODO
+    if(isset($_POST['product_id'])) {
+      $product_id = $_POST['product_id'];
+
+      //TODO
+      $sql = "SELECT * FROM product WHERE product_id=$product_id";
+
+      $result = $pdo -> query($sql);
+      
+      while ($row = $result -> fetch()) {
+        // $cart_products[] = $row;
+        return $row;
+      }
+    }
+  }
+}
+
 // Get all products from database and store in $products
 function getProducts() {
   global $pdo;
@@ -70,3 +92,19 @@ function getReviews() {
     $reviews[] = $row;
   }
 }
+
+// function getCart($productId) {
+//   global $pdo;
+//   global $cart;
+
+//   $sql= 'SELECT * FROM product WHERE product_id = :productId'
+
+//   $statement -> bindValue(':productId', productId);
+
+//   $result = $pdo -> query($sql);
+
+//   while ($row = $result -> ()) {
+//     $cart[] =$row;
+//   }
+
+// }

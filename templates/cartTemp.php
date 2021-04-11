@@ -9,36 +9,16 @@
   <link rel="stylesheet" href="style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/738c285426.js" crossorigin="anonymous"></script> 
-  <script type="text/javascript" src="script.js"></script>
+
+  <script type="text/javascript" src="cart.js"></script>
 
 </head>
 <body>
-  <h1>Products! </h1>
-  <?php
-    theProducts();
-  ?>
-  <div class="addReview">
-    <h2>Post your comment: </h2>
-    <form action="products.php" method="post">
+  <h1>Your Cart! </h1>
 
-      <label>
-        Name: 
-        <input type="text" name="reviewName">
-      </label>
-      <br>
-      <label>
-        Leave your review:
-        <textarea name="reviewContent"></textarea>
-      </label>
+  <div id="dynamicCart">
 
-      <button type="submit" name="button">Post Comment</button>
-      <br>
-    </form>
   </div>
-  <?php
-    theReviews();
-  ?>
-
 
   <nav>
     <ul>

@@ -4,8 +4,8 @@
 function theProducts() {
   global $products;
 
-  echo '<div class"products"><h2> OUR PRODUCTS </h2>';
-
+  echo '<div class="products"><h2> OUR PRODUCTS </h2>';
+  
   foreach($products as $row) {
     ?>
       <br>
@@ -31,9 +31,48 @@ function theProducts() {
         </div>
 
         <div class="addToCartButton">
-          <button> Add to cart </button>
-          <br>
+
+            <input name="productId" type="hidden" value=<?php echo $row['product_id']; ?>>
+            <input name="productPrice" type="hidden" value=<?php echo $row['price']; ?>>
+            <button class="addToCart" type="submit"> Add to cart </button>
+            <br>
+
         </div>
+      </div>
+
+    <?php
+  }
+  echo "</div>";
+}
+
+function theCart() {
+
+  global $product;
+
+  echo '<div class="cart"><h2> Your Cart </h2>';
+
+  foreach($cart as $row) {
+    ?>
+      <br>
+      <div class="cartItem">
+        <div class="cartItemImageWrapper">
+          <img src="<?php echo $row['image_link'];?>" class=cartImage>
+        </div>
+
+        <div class="cartItemName">
+          <?php echo $row['name']; ?>    
+        </div>
+
+        <div class="cartItemPrice">
+          Price: $<?php echo $row['price']; ?> 
+        </div>
+
+        <div class="cartItemQuantity">
+          Quantity: <?php echo $row['bags']; ?>
+        </div>
+
+        <div class="cartTotal">
+          Your Total: 
       </div>
 
     <?php
@@ -68,3 +107,5 @@ function theReviews() {
   }
   echo "</div>";
 }
+
+
