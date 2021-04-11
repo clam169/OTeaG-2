@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.addReview {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.comment {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.reviewContent {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.submitComment {
+    background-color: #53B175;
+    margin: 5px;
+    color: white;
+    border-style: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+}

@@ -6,29 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products</title>
   <link rel="stylesheet" href="css/products.css">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/addReview.css">
+  <link rel="stylesheet" href="css/review.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <script src="https://kit.fontawesome.com/738c285426.js" crossorigin="anonymous"></script> 
 </head>
 <body>
-  <h1>Products! </h1>
   <?php
     theProducts();
   ?>
   <div class="addReview">
-    <h2>Post your comment: </h2>
-    <form action="products.php" method="post">
+    <h2>Welcome your feedback </h2>
+    <form class="comment" action="products.php" method="post">
 
-      <label>
+      <label class="reviewName">
         Name: 
         <input type="text" name="reviewName">
       </label>
-      <br>
-      <label>
+      <label class="reviewContent">
         Leave your review:
         <textarea name="reviewContent"></textarea>
       </label>
 
-      <button type="submit" name="button">Post Comment</button>
+      <button class="submitComment" type="submit" name="button">Submit</button>
       <br>
     </form>
   </div>
@@ -37,9 +38,9 @@
   ?>
   <nav>
     <ul>
-      <li id="shopBtn"><i class="fas fa-store"></i></li>
-      <li id="cartBtn"><i class="fas fa-shopping-cart"></i></li>
-      <li id="accountBtn"><i class="far fa-user-circle"></i></li>
+      <li id="shopBtn"><i class="fas fa-store"> Shop</i></li>
+      <li id="cartBtn"><i class="fas fa-shopping-cart"> Cart</i></li>
+      <li id="accountBtn"><i class="fas fa-user-circle"> Account</i></li>
     </ul>
    </nav>
 </body>
