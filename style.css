@@ -19,6 +19,23 @@
     display: grid;
     grid-template-rows: 2fr 1fr 1fr;
 }
+nav ul {
+    display: grid;
+    justify-content: center;
+    position: sticky;
+}
+nav ul li {
+    list-style: none;
+    grid-row: 1;
+    font-size: 2rem;
+    padding: 20px;
+
+
+}
+
+footer {
+    background-color: #92817A;
+}
 
 label {
     display: grid;
