@@ -11,10 +11,10 @@ $(document).ready(function() {
   }
   let cartItem = getCart();
   cartItem.forEach((item) => {
-
+    console.log(item)
     $.ajax('cart_product.php', {
       type: 'POST',
-      data: {product_id: item.productId},
+      data: {product_id: item.productId, quantity: item.quantity},
       success: function (data, status, xhr) {
         $("#dynamicCart").append(data);
       },
@@ -23,4 +23,9 @@ $(document).ready(function() {
       }
     })
   })
+
+    $("#cartTotal").append(cartItem.reduce((acc, cur) => {
+      return acc + (cur.quantity * cur.price)
+    }, 0))
+  
 })

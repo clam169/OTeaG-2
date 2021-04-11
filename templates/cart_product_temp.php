@@ -20,7 +20,11 @@
   </div>
 
   <div class="cartItemQuantity">
-    Quantity: <?php echo $cart_product['bags']; ?>
+    Quantity: <?php echo $_POST['quantity']; ?>
+  </div>
+
+  <div class="itemTotal">
+    Total: <?php echo $sum = $_POST['quantity'] * $cart_product['price']; ?>
   </div>
 
 </div>

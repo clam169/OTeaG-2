@@ -19,6 +19,13 @@
   <div id="dynamicCart">
 
   </div>
+  <div id="cartTotal">
+     Cart Total: 
+  </div>
+  <div class="checkoutBtn">
+  <button class="submitComment" type="submit" name="button">Checkout</button>
+  
+</div>
 
   <nav>
     <ul>
