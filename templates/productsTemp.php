@@ -37,6 +37,7 @@
       <br>
     </form>
   </div>
+  
   <?php
     theReviews();
   ?>

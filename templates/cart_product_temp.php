@@ -19,8 +19,11 @@
       Price: $<?php echo $cart_product['price']; ?> 
     </div>
 
-    <div class="cartItemQuantity">
-    Quantity: <?php echo $cart_product['bags']; ?>
-    </div>
+  <div class="cartItemQuantity">
+    Quantity: <?php echo $_POST['quantity']; ?>
+  </div>
+
+  <div class="itemTotal">
+    Total: <?php echo $sum = $_POST['quantity'] * $cart_product['price']; ?>
   </div>
 </div>
