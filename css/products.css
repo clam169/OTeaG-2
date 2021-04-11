@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
+body {
+  background-color: #ECECEC;
+}
+
 .products {
   display: grid;
   font-family: 'Montserrat', sans-serif;
@@ -54,25 +58,7 @@
   padding: 10px;
 }
 
-.bagsPer {
-  grid-row: 2/3;
-  padding: 10px;
-}
 
 .addToCartButton {
   grid-column: 2/3;
-}
-footer {
-  background-color: #92817A;
-}
-nav ul {
-  display: grid;
-  justify-content: center;
-  position: sticky;
-}
-nav ul li {
-  list-style: none;
-  grid-row: 1;
-  font-size: 2rem;
-  padding: 20px;
 }

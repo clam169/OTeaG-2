@@ -35,12 +35,11 @@ function theProducts() {
 
             <input name="productId" type="hidden" value=<?php echo $row['product_id']; ?>>
             <input name="productPrice" type="hidden" value=<?php echo $row['price']; ?>>
-            <button class="addToCart" type="submit"> Add to cart </button>
-            <br>
+            <input class="addToCart" type="image" src=".//Images/products/addButton.png" width=80px height=80px>            <br>
 
         </div>
       </div>
-
+  </div>
     <?php
   }
   echo "</div>";
@@ -78,7 +77,8 @@ function theCart() {
         </div>
 
         <div class="cartTotal">
-          Your Total: 
+          Your Total:
+        </div> 
       </div>
 
     <?php

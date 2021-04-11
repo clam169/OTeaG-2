@@ -1,7 +1,7 @@
 ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-top: 0.5px solid #F8F8F8;
+    border: 1px solid #D4D4D4;
     border-radius: 10px;
     padding: 5px;
     align-items: center;
@@ -15,5 +15,5 @@ nav {
     position: sticky;
     bottom: 0;
     height: 40px;
-    background-color: white;
+    background-color: #ECECEC;
 }
