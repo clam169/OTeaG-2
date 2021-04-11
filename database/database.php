@@ -23,6 +23,24 @@ function db_connect() {
   }
 }
 
+function handleReviewSubmission() {
+  global $pdo;
+
+  if($_SERVER["REQUEST_METHOD"] == "POST") {
+    // TODO
+    if(isset($_POST['reviewName']) && isset($_POST['reviewContent'])) {
+
+      $sql = 'INSERT into review (reviewName, date, reviewContent) VALUES (:reviewName, :date, :reviewContent)';
+
+      $statement = $pdo -> prepare($sql);
+
+      $statement -> bindValue(':reviewName', $_POST['reviewName']);
+      $statement -> bindValue(':date', date('Y-m-d'));
+      $statement -> bindValue(':reviewContent', $_POST['reviewContent']);
+      $statement -> execute();
+    }
+  }
+}
 
 // Get all products from database and store in $products
 function getProducts() {
@@ -37,5 +55,18 @@ function getProducts() {
   while ($row = $result -> fetch()) {
     $products[] = $row;
   }
+}
 
+function getReviews() {
+  global $pdo;
+  global $reviews;
+
+  //TODO
+  $sql = 'SELECT * FROM review ORDER BY review_id desc;';
+
+  $result = $pdo -> query($sql);
+  
+  while ($row = $result -> fetch()) {
+    $reviews[] = $row;
+  }
 }

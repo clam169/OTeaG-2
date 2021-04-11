@@ -5,7 +5,18 @@ header {
 nav {
     background-color: #BEDBBB;
 }
+nav ul {
+    display: grid;
+    justify-content: center;
+    position: sticky;
+}
+nav ul li {
+    list-style: none;
+    grid-row: 1;
+    font-size: 2rem;
+    padding: 20px;
 
+}
 footer {
     background-color: #92817A;
 }

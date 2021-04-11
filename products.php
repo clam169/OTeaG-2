@@ -11,8 +11,12 @@ require_once 'templates/functions/functions.php';
 //connect to database: PHP Data object representing Database connection
 $pdo = db_connect();
 
+// submit comment to database
+handleReviewSubmission();
+
 // Get products from database
 getProducts();
+getReviews();
 
 // include the template to display the page
 include 'templates/productsTemp.php';

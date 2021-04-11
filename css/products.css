@@ -1,0 +1,30 @@
+.products {
+  display: grid;
+}
+.product {
+  border-style: solid;
+  border-color: black;
+  justify-items: center;
+}
+.productImage{
+  max-width: 300px;
+  width: 100%;
+  height:auto;
+  align-items: center;
+}
+
+.reviews{
+  background-color: lavender;
+}
+.review{
+  background-color: aqua;
+}
+.reviewName{
+
+}
+.reviewContent{
+
+}
+.reviewContent{
+
+}
