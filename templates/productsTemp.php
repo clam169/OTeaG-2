@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products</title>
   <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/addReview.css">
   <link rel="stylesheet" href="css/review.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <script src="https://kit.fontawesome.com/738c285426.js" crossorigin="anonymous"></script> 
+  <script type="text/javascript" src="script.js"></script>
+
 </head>
 <body>
   <?php
@@ -36,11 +40,13 @@
   <?php
     theReviews();
   ?>
+
+
   <nav>
     <ul>
-      <li id="shopBtn"><i class="fas fa-store"> Shop</i></li>
-      <li id="cartBtn"><i class="fas fa-shopping-cart"> Cart</i></li>
-      <li id="accountBtn"><i class="fas fa-user-circle"> Account</i></li>
+      <li id="shopBtn"><a href="products.php"> <i class="fas fa-store"> Shop </i></a> </li>
+      <li id="cartBtn"><a href="cart.php"> <i class="fas fa-shopping-cart"> Cart </i></a></li>
+      <li id="accountBtn"><i class="fas fa-user-circle"> Account </i></li>
     </ul>
    </nav>
 </body>
