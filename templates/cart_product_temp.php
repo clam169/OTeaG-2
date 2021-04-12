@@ -32,6 +32,6 @@
   </div>
 
   <div class="itemTotal">
-    Total: <?php echo $sum = $_POST['quantity'] * $cart_product['price']; ?>
+    Total: $<?php echo $sum = $_POST['quantity'] * $cart_product['price']; ?>
   </div>
 </div>

@@ -1,6 +1,9 @@
 $(document).ready(function() {
+
   let cart;
   getCart()
+  alert("Please note: We are currently only offering pick up orders at our Vancouver location")
+
   function getCart() {
     if (localStorage.getItem('cart')===null) {
       cart = [];
@@ -27,6 +30,7 @@ $(document).ready(function() {
       return acc + (cur.quantity * cur.price)
     }, 0))
   }
+
 
   
   $('body').on('click', ".removeBtn", function () {
