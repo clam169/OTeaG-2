@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 html {
@@ -57,5 +56,20 @@ img {
 }
 
 @media screen and (min-width: 400px) {
+    body {
+        width: 100%;
+        background-image: none;
+        animation: none;
+        background-color: #ECECEC;
+    }
 
+    .wrapper {
+        background-image: url('./Images/home-tea.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .slogan {
+        padding: 100px;
+    }
 }

@@ -110,7 +110,6 @@ function theReviews() {
         </div>
 
           <br>
-        </div>
       </div>
     <?php
   }

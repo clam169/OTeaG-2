@@ -3,7 +3,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #ECECEC;
+    display: grid;
 }
+
 
 .cartItem {
     display: grid;
@@ -21,4 +23,19 @@ body {
 .cartItemImageWrapper img{
     width: 70px;
     height: 70px;
+}
+
+.submitComment {
+    background-color: #53B175;
+    border-radius: 10px;
+    border: none;
+    height: 35px;
+    width: 100px;
+    color: white;
+    justify-items: end;
+}
+
+
+@media screen and (min-width: 400px) {
+
 }
