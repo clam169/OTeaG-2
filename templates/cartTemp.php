@@ -26,6 +26,7 @@
   
 </div>
 
+
   <nav>
     <ul>
       <li id="goToLanding"><a href="index.html"> <i class="fas fa-shopping-cart"> Home </i></a></li>
@@ -33,5 +34,6 @@
       <li id="cartBtn"><a href="cart.php"> <i class="fas fa-shopping-cart"> Cart</i></a></li>
     </ul>
   </nav>
+
 </body>
 </html>

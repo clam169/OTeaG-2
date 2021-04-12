@@ -25,7 +25,7 @@
 
       <h1>Checkout your orders</h1>
 
-      <form action="a7.php" method="post">
+      <form action="checkout.php" method="post">
 
         <label for="email">  Please enter your email address:
 

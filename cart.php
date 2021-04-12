@@ -8,6 +8,7 @@ $products = [];
 require_once 'database/database.php';
 require_once 'templates/functions/functions.php';
 
+
 //connect to database: PHP Data object representing Database connection
 $pdo = db_connect();
 

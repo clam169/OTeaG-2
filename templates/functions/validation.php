@@ -30,7 +30,7 @@ function validate()
     if($_SERVER['REQUEST_METHOD']== 'POST')
     {
       if(isset($_POST["email"])) {
-        if ($type=='email')
+
           {
 
               $submitted = $_POST["email"];
