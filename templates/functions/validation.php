@@ -1,56 +1,67 @@
 <?php
-// Global result of form validation
+
 $valid = false;
-// Global array of validation messages. For valid fields, message is ""
 $val_messages = Array();
 
-// Output the results if all fields are valid.
 function the_results()
 {
   global $valid;
-
-  if($_SERVER["REQUEST_METHOD"]=="POST")
-  {
-    ?>
-    <div class="results">
-      <div class="result-text">Congratulation! The order information will send to <?php echo $_POST["email"]?></div>
-    <?php
+  if ($valid) {
+    if ($_SERVER["REQUEST_METHOD"]=="POST") {
+      ?>
+        <div class="results">
+          <div class="result-text">Congratulations, <?php echo $_POST["firstName"]?>! Your order has been successfully placed. 
+            The order information will be sent to <?php echo $_POST["email"]?>
+          </div>
+        </div>
+      <?php
+    }
   }
 }
 
-// Check each field to make sure submitted data is valid. If no boxes are checked, isset() will return false
-function validate()
-{
-    global $valid;
-    global $val_messages;
+function validate() {
+  global $valid;
+  global $val_messages;
 
-    // Initialize result
-    $result = true;
+  $result = true;
+  
+  if($_SERVER['REQUEST_METHOD']== 'POST') {
     
-    if($_SERVER['REQUEST_METHOD']== 'POST')
-    {
-      if(isset($_POST["email"])) {
+    if (isset($_POST["email"]) && isset($_POST["firstName"])) {
 
-          {
+      foreach($_POST as $type => $value) {
 
-              $submitted = $_POST["email"];
-              $pattern = '#^(.+)@([^\.].*)\.([a-z]{2,})$#';
+        if ($type=='email') {
+          $submitted = $_POST["email"];
+          $pattern = '#^(.+)@([^\.].*)\.([a-z]{2,})$#';
+          $this_result = preg_match($pattern, $submitted);
+          $result= $result && $this_result;
 
-              $this_result = preg_match($pattern, $submitted);
+          if($this_result == true) {
+            $val_messages[$type]="";
+          } else {
+            $val_messages[$type]="Email is not correct format";
+          }            
+        } else if ($type=='firstName') {
+          $submitted = $_POST["firstName"];
+          $pattern = '([a-z,A-Z]{2})';
+          $this_result = preg_match($pattern, $submitted);
+          $result= $result && $this_result;
 
-              $result= $result && $this_result;
-
-              //Update message
-              if($this_result == true) {$val_messages[$type]="";}
-              else {$val_messages[$type]="email is not correct format";}
-
-          }
+          if($this_result == true) {
+            $val_messages[$type]="";
+          } else {
+            $val_messages[$type]="Please enter a valid name.";
+          }    
+        }
       }
-      
+    } else {
+        echo "<p>Something has gone wrong with the form!</p>";
     }
+  }
+  $valid = $result;
 }
 
-// Display error message if field not valid. Displays nothing if the field is valid.
 function the_validation_message($type) {
   global $val_messages;
 
