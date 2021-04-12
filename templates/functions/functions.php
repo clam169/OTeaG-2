@@ -5,7 +5,6 @@ function theProducts() {
   global $products;
 
   echo '<div class="products"><h2> OUR PRODUCTS </h2>';
-
   foreach($products as $row) {
     ?>
       <div class="product">

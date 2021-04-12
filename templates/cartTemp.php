@@ -19,13 +19,15 @@
 
   </div>
   <div id="cartTotal">
-     Cart Total: 
+     Cart Total: $
   </div>
 
   <div class="wrapper">
 
-<h1>Checkout your orders</h1>
-
+<h1>Checkout</h1>
+<p> 
+We are currently doing pick up orders at our <span id="Vancouver" title="888 YVR Street, V8V8V8"><strong>Vancouver location</strong> </span> only.   
+Leave your name and email address below. We will contact you within 2 business days. </p>
 <form action="cart.php" method="post">
 
   <label for="firstName">  First Name:

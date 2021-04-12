@@ -21,7 +21,7 @@
     theProducts();
   ?>
   <div class="addReview">
-    <h2>Welcome your feedback </h2>
+    <h2>We value your feedback </h2>
     <form class="comment" action="products.php" method="post">
 
       <label class="reviewName">

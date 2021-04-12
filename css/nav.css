@@ -5,9 +5,11 @@ ul {
     border-radius: 10px;
     padding: 5px;
     align-items: center;
+    
 }
 
 li {
+    
     list-style: none;
 }
 
@@ -16,6 +18,13 @@ nav {
     bottom: 0;
     height: 40px;
     background-color: #ECECEC;
+}
+
+a {
+    color:black;
+}
+a:visted{
+    color:black;
 }
 
 @media screen and (min-width: 400px) {
