@@ -67,6 +67,8 @@ img {
         background-image: url('./Images/home-tea.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        display: grid;
+        grid-template-rows: 4fr 1fr;
     }
 
     .slogan {

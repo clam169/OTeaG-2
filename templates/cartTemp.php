@@ -32,13 +32,13 @@
     <input type="text" name="firstName" id="firstName">
     <?php the_validation_message('firstName'); ?>
   </label>
-
+  <br>
   <label for="email">  Please enter your email address:
     <input type="text" name="email" id="email">
     <?php the_validation_message('email'); ?>
   </label>
-
-  <input type="submit" value="Checkout">
+  <br>
+  <input class="checkoutBtn" type="submit" value="Checkout">
 
 </form>
 

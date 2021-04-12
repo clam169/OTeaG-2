@@ -17,6 +17,7 @@
 
 </head>
 <body>
+  <main>
   <?php
     theProducts();
   ?>
@@ -41,6 +42,7 @@
   <?php
     theReviews();
   ?>
+  </main>
 
 
   <nav>
