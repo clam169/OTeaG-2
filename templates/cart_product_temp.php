@@ -18,9 +18,17 @@
     <div class="cartItemPrice">
       Price: $<?php echo $cart_product['price']; ?> 
     </div>
-
+  </div>
+  
   <div class="cartItemQuantity">
-    Quantity: <?php echo $_POST['quantity']; ?>
+    Quantity: 
+    <input class="quantity" type="text" value="<?php echo $_POST['quantity']; ?>">
+    <input class="quantityBtn" type="image" value="Update">
+    <br>
+    <br>
+    <!-- <button class="removeBtn" name="remove">Remove item</button> -->
+    <input type="hidden" value="<?php echo $cart_product['product_id']?>"></input>
+    <input class="removeBtn" type="image" value="Remove Item">
   </div>
 
   <div class="itemTotal">

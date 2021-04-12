@@ -7,6 +7,7 @@ $products = [];
 
 require_once 'database/database.php';
 require_once 'templates/functions/functions.php';
+require_once 'templates/functions/validation.php';
 
 //connect to database: PHP Data object representing Database connection
 $pdo = db_connect();
@@ -17,6 +18,7 @@ handleReviewSubmission();
 // Get products from database
 getProducts();
 getReviews();
+validate();
 
 // include the template to display the page
 include 'templates/cartTemp.php';

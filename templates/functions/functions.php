@@ -108,7 +108,6 @@ function theReviews() {
         <div class="reviewContent">
             <?php echo $row['reviewContent']; ?>   
         </div>
-
           <br>
       </div>
     <?php
