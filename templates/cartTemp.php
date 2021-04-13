@@ -13,6 +13,7 @@
 
 </head>
 <body>
+<div class="mainWrapper">
   <h1>Your Cart! </h1>
 
   <div id="dynamicCart">
@@ -53,6 +54,6 @@
       <li id="cartBtn"><a href="cart.php"> <i class="fas fa-shopping-cart"> Cart</i></a></li>
     </ul>
   </nav>
-
+</div>
 </body>
 </html>
