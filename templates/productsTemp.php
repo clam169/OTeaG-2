@@ -17,6 +17,7 @@
 
 </head>
 <body>
+  <div class="mainWrapper">
   <main>
   <?php
     theProducts();
@@ -51,6 +52,7 @@
       <li id="shopBtn"><a href="products.php"> <i class="fas fa-store"> Shop </i></a> </li>
       <li id="cartBtn"><a href="cart.php"> <i class="fas fa-shopping-cart"> Cart </i></a></li>
     </ul>
-   </nav>
+  </nav>
+  </div>
 </body>
 </html>

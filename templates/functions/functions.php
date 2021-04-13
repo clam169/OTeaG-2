@@ -13,12 +13,14 @@ function theProducts() {
           <img src="<?php echo $row['image_link'];?>" class=productImage>
         </div>
 
-        <div class="productName">
-          <?php echo $row['name']; ?>    
-        </div>
+        <div class="nameDesc">
+          <div class="productName">
+            <b><?php echo $row['name']; ?></b>
+          </div>
 
-        <div class="description">
-            <?php echo $row['description']; ?>   
+          <div class="description">
+              <?php echo $row['description']; ?>   
+          </div>
         </div>
 
         <div class="PriceOrderAdd">
