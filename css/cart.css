@@ -6,13 +6,20 @@ body {
     display: grid;
 }
 
+h1 {
+    color: grey;
+}
 
 .cartItem {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    border: 2px solid grey;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    border: 1px solid grey;
+    border-radius: 10px;
     margin: 5px;
     padding: 3px;
+    height: 150px;
+    background-color: white;
 }
 
 .cartItemName {
@@ -20,14 +27,27 @@ body {
 }
 
 .cartItemImageWrapper {
-    width: 80px;
-    height: 80px;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .cartItemImageWrapper img{
-    width: 70px;
-    height: 70px;
+    height: 120px;
 }
+
+.cartItemName {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: x-large;
+    color: grey;
+    align-content: center;
+}
+
+.cartRight {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
 
 .submitComment {
     background-color: #53B175;
@@ -39,7 +59,49 @@ body {
     justify-items: end;
 }
 
+.quantity {
+    height: 20px;
+    width: 45px;
+}
 
-@media screen and (min-width: 400px) {
+.quantityBtn {
+    height: 30px;
+    width: 45px;
+    border-radius: 10px;;
+    border: 1px none;
+    background-color: #53B175;
+    color: white;
+}
 
+.removeBtn {
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;;
+    border: 1px none;
+    background-color: #53B175;
+    color: white;
+}
+
+.checkoutBtn {
+    height: 30px;
+    width: 75px;
+    border-radius: 10px;;
+    border: 1px none;
+    background-color: #53B175;
+    color: white;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    body {
+        max-width: 960px;
+        margin: auto;
+        background-color: #ECECEC;
+    }
+
+    .mainWrapper {
+        background-color: #ECECEC;
+        padding: 20px;
+    }
 }

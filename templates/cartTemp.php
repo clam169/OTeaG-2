@@ -13,6 +13,7 @@
 
 </head>
 <body>
+<div class="mainWrapper">
   <h1>Your Cart! </h1>
 
   <div id="dynamicCart">
@@ -34,13 +35,13 @@ Leave your name and email address below. We will contact you within 2 business d
     <input type="text" name="firstName" id="firstName">
     <?php the_validation_message('firstName'); ?>
   </label>
-
+  <br>
   <label for="email">  Please enter your email address:
     <input type="text" name="email" id="email">
     <?php the_validation_message('email'); ?>
   </label>
-
-  <input type="submit" value="Checkout">
+  <br>
+  <input class="checkoutBtn" type="submit" value="Checkout">
 
 </form>
 
@@ -55,6 +56,6 @@ Leave your name and email address below. We will contact you within 2 business d
       <li id="cartBtn"><a href="cart.php"> <i class="fas fa-shopping-cart"> Cart</i></a></li>
     </ul>
   </nav>
-
+</div>
 </body>
 </html>

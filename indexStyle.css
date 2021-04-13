@@ -55,7 +55,7 @@ img {
     height: 80%;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
     body {
         width: 100%;
         background-image: none;
@@ -67,9 +67,20 @@ img {
         background-image: url('./Images/home-tea.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        height: auto;
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr;
     }
 
     .slogan {
-        padding: 100px;
+        grid-row: 1/2;
+        background-color: white;
+        border-radius: 10px;
+        height: 65%;
+        padding: 50px;
+    }
+
+    form {
+        grid-row: 3/4;
     }
 }
